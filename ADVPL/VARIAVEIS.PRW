@@ -43,7 +43,7 @@ Public __cPublic := 'Gabriel'
 
 RETURN 
 
-
+//-------------------------------------------
 //Função estática
 Static Function TestEscop(nValor1, nValor2)
 
@@ -60,4 +60,27 @@ Alert("Private: " + cPri)
 Alert ("Publica: " + __cPublic )
 
 RETURN
+
+
+
+//------------------------------------------
+//estrtura de repetição
+User Function REPETICAO()
+
+Local Num1 := 30
+Local Num2 := 100
+
+If(Num1 = Num2)
+
+MsgInfo("A Variavel 1 é igual a Num2")
+
+ElseIf (Num1 > Num2)
+MasgAlert ("A variável é maior")
+
+ElseIf (Num1 != Num2)
+Alert ('A variavel Num1 é diferente de Num2')
+
+EndIf
+
+RETURN 
 
