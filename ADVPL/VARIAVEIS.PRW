@@ -63,8 +63,7 @@ RETURN
 
 
 
-//------------------------------------------
-//estrtura de repetição
+//--------------------------------------
 User Function REPETICAO()
 
 Local Num1 := 30
@@ -83,4 +82,58 @@ Alert ('A variavel Num1 é diferente de Num2')
 EndIf
 
 RETURN 
+
+//------------------------------------
+//Do Case, vários blocos de if else
+// EndCase 
+
+User Function Docase()
+
+Local cDate := "19/08/2025"
+
+Do Case 
+
+Case cDate == "19/08/2025"
+Alert ("Não é meu Aniversário")
+
+Case cDate == "21/10/2003"
+Alert("É meu Aniversário")
+
+OtherWise
+MsgAlert("Não sei qual dia seria hoje")
+
+EndCase
+RETURN
+
+//------------------------------------------
+//estrtura de repetição
+User Function cFOR()
+
+Local Count
+Local Num := 0
+
+For Count := 0 To 10 Step 2
+
+
+Num += Count
+
+Next
+Alert("Valor: " + cValToChar(Num))
+
+RETURN
+
+
+//----------------------------------
+User Function cWhile()
+
+Local nNum := 0
+Local Nnumm := 10
+
+while nNum < Nnumm
+    nNum++
+
+    EndDo
+    Alert(NNum + nNumm)
+
+RETURN
 
